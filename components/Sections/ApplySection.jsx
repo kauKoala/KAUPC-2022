@@ -27,7 +27,12 @@ const ApplySection = () => {
         </ApplyInfo>
         <ApplyInfo>
           <ApplyInfoTitle>대회 경품</ApplyInfoTitle>
-          <div>dldldl</div>
+          <ApplyInfoContent>
+            <li>대상 (1팀) - 총장 명의의 상장 및 상금 100만원</li>
+            <li>최우수상 (2팀) - 상금 50만원</li>
+            <li>최우수상 (3팀) - 상금 30만원</li>
+            <li>우수상 (4팀) - 상금 20만원</li>
+          </ApplyInfoContent>
         </ApplyInfo>
       </ApplyInfoContainer>
     </Section>
@@ -43,6 +48,7 @@ const ApplyInfoContainer = styled.div`
 
   @media screen and (max-width: ${SMALL_WIDTH}) {
     margin-top: 60px;
+    margin-bottom: 80px;
     flex-direction: column;
   }
 `;

@@ -44,6 +44,10 @@ const RuleList = styled.ul`
   flex-direction: column;
   gap: 20px;
   margin-top: 40px;
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    margin-top: 20px;
+  }
 `;
 
 const RuleItem = styled.li`
