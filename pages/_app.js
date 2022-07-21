@@ -13,6 +13,27 @@ function MyApp({ Component, pageProps }) {
           crossOrigin
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard-dynamic-subset.css"
         />
+        <meta
+          name="title"
+          property="og:title"
+          content="제 2회 한국항공대학교 프로그래밍 경진대회"
+        />
+        <meta
+          name="description"
+          property="og:description"
+          content="
+        프로그래밍에 관심이 있다면, 지금 바로 도전해보세요."
+        />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://user-images.githubusercontent.com/26535030/180230182-b010a812-f1d6-4dc2-94d7-4276d0bdea5d.png"
+        />
+        <meta
+          name="url"
+          property="og:url"
+          content="https://kaupc2022.netlify.app/"
+        />
       </Head>
       <Layout>
         <Component {...pageProps} />
@@ -25,7 +46,7 @@ const Layout = styled.div`
   height: 100%;
 
   & {
-    background: linear-gradient(192deg, #111418,  #0e0d3e);
+    background: linear-gradient(192deg, #111418, #0e0d3e);
     background-size: 400% 400%;
 
     -webkit-animation: animateBackground 5s ease infinite;
