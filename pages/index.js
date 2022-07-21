@@ -18,6 +18,7 @@ export default function Home() {
       autoplay: true,
       animationData: require("public/lottie/hero.json"),
     });
+    return () => Lottie.destroy();
   }, []);
 
   return (

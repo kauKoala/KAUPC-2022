@@ -1,9 +1,22 @@
 import styled from "@emotion/styled";
 import Section from "components/Section";
-import React, { useRef } from "react";
+import Lottie from "lottie-web";
+import React, { useEffect, useRef } from "react";
 import { SMALL_WIDTH } from "styles/layouts.ts";
 
 const HeroSection = () => {
+  const lottieContainer = useRef();
+  useEffect(() => {
+    Lottie.loadAnimation({
+      container: lottieContainer.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("public/lottie/drone.json"),
+    });
+    return () => Lottie.destroy();
+  }, []);
+
   return (
     <Section>
       <HeroContainer>
@@ -18,6 +31,7 @@ const HeroSection = () => {
             <Info>대회 : 08.18(월)</Info>
           </Schedule>
         </div>
+        <LottieContainer ref={lottieContainer}></LottieContainer>
         <Content>
           <Info>
             주최 : 한국항공대학교 소프트웨어학과 & 한국항공대 알고리즘 동아리
@@ -84,6 +98,32 @@ const Info = styled.p`
     font-size: 18px;
     line-height: 1.5;
     gap: 8px;
+  }
+`;
+
+const LottieContainer = styled.div`
+  background-repeat: no-repeat;
+  top: 100px;
+  position: absolute;
+  right: 100px;
+
+  svg {
+    height: 400px;
+  }
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    & {
+      right: 0;
+      top: 340px;
+      height: 300px;
+      margin-top: -20px;
+      margin-bottom: -50px;
+      position: static;
+    }
+
+    svg {
+      height: 600px;
+    }
   }
 `;
 
