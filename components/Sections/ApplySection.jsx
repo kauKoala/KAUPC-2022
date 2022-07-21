@@ -1,21 +1,20 @@
 import styled from "@emotion/styled";
 import Section from "components/Section";
-import SubTitle from "components/SubTitle";
-import Title from "components/Title";
 import React from "react";
+import { SMALL_WIDTH } from "styles/layouts.ts";
 
 const ApplySection = () => {
   return (
     <Section>
-      <Title>누구든 주인공이 될 수 있어요</Title>
-      <SubTitle>
-        KAUPC의 목표는 단순히 1등을 가려내는 것이 아니라, 학우들의 프로그래밍 역량을 점검하고 기르는
-        시간이에요.
-      </SubTitle>
-      <SubTitle>
-        소프트웨어 전공자가 아니더라도, 2022년도 2학기 한국항공대학교 학부 재학생이라면 누구나
-        도전할 수 있어요.
-      </SubTitle>
+      <Section.Title>누구든 주인공이 될 수 있어요</Section.Title>
+      <Section.SubTitle>
+        KAUPC의 목표는 단순히 1등을 가려내는 것이 아니라, 학우들의 프로그래밍
+        역량을 점검하고 기르는 시간이에요.
+      </Section.SubTitle>
+      <Section.SubTitle>
+        소프트웨어 전공자가 아니더라도, 2022년도 2학기 한국항공대학교 학부
+        재학생이라면 누구나 도전할 수 있어요.
+      </Section.SubTitle>
       <p>(※ 학부 휴학생 참가 가능 / 대학원생 참여 불가)</p>
       <ApplyInfoContainer>
         <ApplyInfo>
@@ -41,6 +40,11 @@ const ApplyInfoContainer = styled.div`
   justify-content: space-evenly;
   margin-top: 80px;
   gap: 40px;
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    margin-top: 60px;
+    flex-direction: column;
+  }
 `;
 
 const ApplyInfo = styled.div`
@@ -52,6 +56,10 @@ const ApplyInfo = styled.div`
   /* box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.3); */
   /* backdrop-filter: blur(8px); */
   /* border: 1px solid #312a7c; */
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    padding: 0;
+  }
 `;
 
 const ApplyInfoTitle = styled.h3`
@@ -71,6 +79,12 @@ const ApplyInfoContent = styled.ul`
   list-style: disc;
   list-style-position: inside;
   gap: 20px;
-`
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    font-size: 15px;
+    line-height: 1.5;
+    gap: 8px;
+  }
+`;
 
 export default ApplySection;

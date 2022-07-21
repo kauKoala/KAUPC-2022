@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import Section from "components/Section";
 import React, { useRef } from "react";
+import { SMALL_WIDTH } from "styles/layouts.ts";
 
 const HeroSection = () => {
   return (
@@ -9,7 +10,8 @@ const HeroSection = () => {
         <div>
           <HeroTitle>KAUPC 2022</HeroTitle>
           <HeroSubTitle>
-            한국항공대학교 제 <Second>2</Second>회 프로그래밍 경진대회
+            한국항공대학교
+            <br />제 <Second>2</Second>회 프로그래밍 경진대회
           </HeroSubTitle>
           <Schedule>
             <Info>접수 : 08.01(수) ~ 08.15(금)</Info>
@@ -17,7 +19,10 @@ const HeroSection = () => {
           </Schedule>
         </div>
         <Content>
-          <Info>주최 : 한국항공대학교 소프트웨어학과 & 한국항공대 알고리즘 동아리 KOALA</Info>
+          <Info>
+            주최 : 한국항공대학교 소프트웨어학과 & 한국항공대 알고리즘 동아리
+            KOALA
+          </Info>
         </Content>
       </HeroContainer>
     </Section>
@@ -26,7 +31,7 @@ const HeroSection = () => {
 
 const HeroContainer = styled.div`
   color: white;
-  height: 90%;
+  height: 80vh;
   font-weight: 700;
   display: flex;
   flex-direction: column;
@@ -41,12 +46,21 @@ const HeroTitle = styled.h1`
   font-size: 80px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 2px #312a7c;
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    font-size: 72px;
+  }
 `;
 
 const HeroSubTitle = styled.h1`
   font-size: 48px;
   text-shadow: 2px 2px 2px #312a7c;
   margin-bottom: 28px;
+  line-height: 1.3;
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    font-size: 28px;
+  }
 `;
 
 const Content = styled.div`
@@ -65,6 +79,12 @@ const Schedule = styled.div`
   font-size: 24px;
 `;
 
-const Info = styled.p``;
+const Info = styled.p`
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    font-size: 18px;
+    line-height: 1.5;
+    gap: 8px;
+  }
+`;
 
 export default HeroSection;
