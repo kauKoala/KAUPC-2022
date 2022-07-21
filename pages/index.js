@@ -6,6 +6,7 @@ import RuleSection from "components/Sections/RuleSection";
 import Spacing from "components/Spacing";
 import Lottie from "lottie-web";
 import { useEffect, useRef } from "react";
+import { SMALL_WIDTH } from "styles/layouts.ts";
 
 export default function Home() {
   const lottieContainer = useRef();
@@ -40,7 +41,7 @@ const LottieContainer = styled.div`
   overflow: hidden;
   display: inline-block;
   text-align: right;
-  opacity: 0.4 !important;
+  opacity: 0.32 !important;
   position: fixed;
   top: 0;
   left: 0;
