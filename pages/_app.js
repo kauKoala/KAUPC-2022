@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
           crossOrigin
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard-dynamic-subset.css"
         />
+        <title>2022 한국항공대학교 프로그래밍 경진대회</title>
         <meta
           name="title"
           property="og:title"
@@ -21,8 +22,7 @@ function MyApp({ Component, pageProps }) {
         <meta
           name="description"
           property="og:description"
-          content="
-        프로그래밍에 관심이 있다면, 지금 바로 도전해보세요."
+          content="프로그래밍에 관심이 있다면, 지금 바로 도전해보세요."
         />
         <meta
           name="image"
