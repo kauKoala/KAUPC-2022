@@ -1,38 +1,65 @@
 import styled from "@emotion/styled";
 import Section from "components/Section";
+import Strong from "components/Strong";
+import ToolTip from "components/ToolTip";
 import React from "react";
 import { SMALL_WIDTH } from "styles/layouts.ts";
+import { AiOutlineCalendar, AiOutlineTrophy } from "react-icons/ai";
 
 const ApplySection = () => {
   return (
     <Section>
       <Section.Title>누구든 주인공이 될 수 있어요</Section.Title>
       <Section.SubTitle>
-        KAUPC의 목표는 단순히 1등을 가려내는 것이 아니라, 학우들의 프로그래밍
-        역량을 점검하고 기르는 시간이에요.
+        KAUPC의 목표는 단순히 1등을 가려내는 것이 아니라, 학우들의 프로그래밍 역량을 점검하고 기르는
+        시간이에요.
       </Section.SubTitle>
       <Section.SubTitle>
-        소프트웨어 전공자가 아니더라도, 2022년도 2학기 한국항공대학교 학부
-        재학생이라면 누구나 도전할 수 있어요.
+        소프트웨어 전공자가 아니더라도, 2022년도 2학기 한국항공대학교 학부 재학생이라면 누구나
+        도전할 수 있어요.
       </Section.SubTitle>
       <p>(※ 학부 휴학생 참가 가능 / 대학원생 참여 불가)</p>
       <ApplyInfoContainer>
         <ApplyInfo>
-          <ApplyInfoTitle>대회 일정</ApplyInfoTitle>
+          <ApplyInfoTitle>
+            <AiOutlineCalendar />
+            대회 일정
+          </ApplyInfoTitle>
           <ApplyInfoContent>
-            <li>접수 마감 - 2021년 11월 3일 (수요일) 자정</li>
-            <li>본대회 - 2021년 11월 6일 (토요일) 14:00 ~ 17:00 (3시간)</li>
-            <li>스코어보드 발표 - 대회 종료 직후 공개</li>
+            <li>접수 마감 : 2022년 9월 14일 (수요일) 자정</li>
+            <li>대회일 : 2022년 9월 17일 (토요일) 14:00 ~ 17:00</li>
+            <li>대회 장소 : 추후 발표</li>
+            <li>스코어보드 발표 : 대회 종료 직후 공개</li>
           </ApplyInfoContent>
         </ApplyInfo>
         <ApplyInfo>
-          <ApplyInfoTitle>대회 경품</ApplyInfoTitle>
+          <ApplyInfoTitle>
+            <AiOutlineTrophy />
+            대회 경품</ApplyInfoTitle>
           <ApplyInfoContent>
-            <li>대상 (1팀) - 총장 명의의 상장 및 상금 100만원</li>
-            <li>최우수상 (2팀) - 상금 50만원</li>
-            <li>최우수상 (3팀) - 상금 30만원</li>
-            <li>우수상 (4팀) - 상금 20만원</li>
+            <li>
+              <Strong>1등 (1팀)</Strong> : 상금 90만원 및 상장 수여
+            </li>
+            <li>
+              <Strong>2등 (2팀)</Strong> : 상금 60만원 및 상장 수여
+            </li>
+            <li>
+              <Strong>3등 (3팀)</Strong> : 상금 30만원 및 상장 수여
+            </li>
+            <li>
+              <Strong>4등 (4팀)</Strong> : 치킨 기프티콘 및 상장 수여
+            </li>
+            <li>
+              <Strong>특별상</Strong> : 베스킨라빈스 싱글 쿠폰
+            </li>
+            <li>
+              <Strong>참가자 전원</Strong> : 학생활동 마일리지 지급
+            </li>
           </ApplyInfoContent>
+          <ToolTip>
+            <span style={{ display: "inline-block", marginRight: "12px" }}>🏆</span>상위 3팀에게는
+            경인지역 연합 프로그래밍 경시대회 Shake! 본선 진출의 기회가 주어집니다.
+          </ToolTip>
         </ApplyInfo>
       </ApplyInfoContainer>
     </Section>
@@ -69,6 +96,8 @@ const ApplyInfo = styled.div`
 `;
 
 const ApplyInfoTitle = styled.h3`
+  display: flex;
+  align-items: center;
   font-size: 24px;
   /* text-align: center; */
   text-shadow: 2px 2px 2px #333;
@@ -76,6 +105,10 @@ const ApplyInfoTitle = styled.h3`
   margin-bottom: 24px;
   padding-bottom: 20px;
   border-bottom: 1px solid white;
+
+  svg {
+    margin-right: 12px;
+  }
 `;
 
 const ApplyInfoContent = styled.ul`
@@ -84,12 +117,12 @@ const ApplyInfoContent = styled.ul`
   font-size: 18px;
   list-style: disc;
   list-style-position: inside;
-  gap: 20px;
+  gap: 24px;
 
   @media screen and (max-width: ${SMALL_WIDTH}) {
     font-size: 15px;
     line-height: 1.5;
-    gap: 8px;
+    gap: 12px;
   }
 `;
 

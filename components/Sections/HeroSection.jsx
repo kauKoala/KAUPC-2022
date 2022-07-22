@@ -24,20 +24,31 @@ const HeroSection = () => {
           <HeroTitle>KAUPC 2022</HeroTitle>
           <HeroSubTitle>
             한국항공대학교
-            <br />제 <Second>2</Second>회 프로그래밍 경진대회
+            <br />제<Second>2</Second>회 프로그래밍 경진대회
           </HeroSubTitle>
           <Schedule>
-            <Info>접수 : 08.01(수) ~ 08.15(금)</Info>
-            <Info>대회 : 08.18(월)</Info>
+            <Info>접수 : ~ 09.14(수)</Info>
+            <Info>대회 : 09.17(토) 14:00 ~ 17:00</Info>
           </Schedule>
         </div>
         <LottieContainer ref={lottieContainer}></LottieContainer>
-        <Content>
-          <Info>
-            주최 : 한국항공대학교 소프트웨어학과 & 한국항공대 알고리즘 동아리
-            KOALA
-          </Info>
-        </Content>
+        <SponsorsContainer>
+          <Sponsors>
+            <SponsorTitle>주최</SponsorTitle>
+            <Info>
+              <Sponsor>한국항공대학교 소프트웨어학과</Sponsor>
+              <Sponsor>한국항공대학교 알고리즘 동아리 Koala</Sponsor>
+            </Info>
+          </Sponsors>
+          <Sponsors>
+            <SponsorTitle>후원</SponsorTitle>
+            <Info>
+              <a href="https://startlink.io/" target="_blank" rel="noreferrer">
+                <SponsorImage src="startlink-logo-white.png" alt="후원처 1 - startlink" />
+              </a>
+            </Info>
+          </Sponsors>
+        </SponsorsContainer>
       </HeroContainer>
     </Section>
   );
@@ -59,7 +70,7 @@ const Second = styled.span`
 const HeroTitle = styled.h1`
   font-size: 80px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 2px #312a7c;
+  text-shadow: 5px 5px 5px #312a7c;
 
   @media screen and (max-width: ${SMALL_WIDTH}) {
     font-size: 72px;
@@ -68,7 +79,8 @@ const HeroTitle = styled.h1`
 
 const HeroSubTitle = styled.h1`
   font-size: 48px;
-  text-shadow: 2px 2px 2px #312a7c;
+  text-shadow: 4px 4px 4px #312a7c;
+
   margin-bottom: 28px;
   line-height: 1.3;
 
@@ -77,11 +89,38 @@ const HeroSubTitle = styled.h1`
   }
 `;
 
-const Content = styled.div`
-  width: 100%;
+const SponsorsContainer = styled.div`
+  display: flex;
+  gap: 80px;
+  justify-content: flex-start;
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    flex-direction: column;
+    gap: 32px;
+  }
+`;
+
+const Sponsors = styled.div`
   align-items: center;
   justify-content: space-between;
-  font-size: 24px;
+`;
+
+const SponsorTitle = styled.div`
+  font-size: 28px;
+  margin-bottom: 18px;
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    font-size: 22px;
+  }
+`;
+
+const Sponsor = styled.p`
+  font-size: 20px;
+  margin: 12px 0;
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    font-size: 14px;
+    margin: 4px 0;
+  }
 `;
 
 const Schedule = styled.div`
@@ -91,6 +130,10 @@ const Schedule = styled.div`
   text-align: left;
   margin: 12px 0;
   font-size: 24px;
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    gap: 4px;
+  }
 `;
 
 const Info = styled.p`
@@ -113,10 +156,8 @@ const LottieContainer = styled.div`
 
   @media screen and (max-width: ${SMALL_WIDTH}) {
     & {
-      right: 0;
-      top: 340px;
-      height: 300px;
-      margin-top: -20px;
+      height: 240px;
+      margin-top: 0px;
       margin-bottom: -50px;
       position: static;
     }
@@ -126,5 +167,10 @@ const LottieContainer = styled.div`
     }
   }
 `;
+
+const SponsorImage = styled.img`
+  max-height: 60px;
+  margin-top: -24px;
+`
 
 export default HeroSection;
