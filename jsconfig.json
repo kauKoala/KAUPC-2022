@@ -5,7 +5,8 @@
     "baseUrl": ".",
     "paths": {
       "styles/*": ["./styles/*"],
-      "components/*": ["./components/*"]
+      "components/*": ["./components/*"],
+      "constants/*": ["./constants/*"]
     }
   },
   "exclude": ["node_modules"]
