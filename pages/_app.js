@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         <meta
           name="title"
           property="og:title"
-          content="제 2회 한국항공대학교 프로그래밍 경진대회"
+          content="제2회 한국항공대학교 프로그래밍 경진대회"
         />
         <meta
           name="description"

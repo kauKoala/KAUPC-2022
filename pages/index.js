@@ -5,8 +5,8 @@ import HeroSection from "components/Sections/HeroSection";
 import RuleSection from "components/Sections/RuleSection";
 import Spacing from "components/Spacing";
 import Lottie from "lottie-web";
+import SectionId from "constants/SectionId"
 import { useEffect, useRef } from "react";
-import { SMALL_WIDTH } from "styles/layouts.ts";
 
 export default function Home() {
   const lottieContainer = useRef();
@@ -25,11 +25,11 @@ export default function Home() {
   return (
     <>
       <LottieContainer ref={lottieContainer}></LottieContainer>
-      <HeroSection />
+      <HeroSection id={SectionId.HERO} />
       <Spacing />
-      <ApplySection />
-      <RuleSection />
-      <FAQSection />
+      <ApplySection id={SectionId.INFO} />
+      <RuleSection id={SectionId.RULE} />
+      <FAQSection id={SectionId.APPLY} />
     </>
   );
 }
