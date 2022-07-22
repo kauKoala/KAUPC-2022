@@ -20,7 +20,7 @@ const Title = styled.h1`
   text-shadow: 4px 4px 4px #312a7c;
 
   @media screen and (max-width: ${SMALL_WIDTH}) {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 `;

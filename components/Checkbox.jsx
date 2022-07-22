@@ -28,6 +28,7 @@ const Container = styled.div`
 
   label {
     cursor: pointer;
+    line-height: 1.5;
   }
 `;
 
