@@ -18,7 +18,7 @@ const RuleSection = () => {
           대회 진행
         </RuleSubTitle>
         <RuleItem>
-          본 대회는 3인 1조로 진행되며, 약 3시간동안 주어진 프로그래밍 문제를 해결하는 대회입니다.
+          본 대회는 3인 1팀로 진행되며, 약 3시간동안 주어진 프로그래밍 문제를 해결하는 대회입니다.
         </RuleItem>
         <RuleItem>
           사용 가능 언어는 C11, C++14, Java (OpenJDK), Kotlin (JVM), Python 3, PyPy3 로 제한되며,

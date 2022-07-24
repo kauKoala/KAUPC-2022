@@ -34,7 +34,7 @@ const FAQSection = () => {
 
   return (
     <Section>
-      <Section.Title>KAUPC 2022 접수하기</Section.Title>
+      <Section.Title><Second>KAUPC 2022</Second> 접수하기</Section.Title>
       <Content>
         <Section.SubTitle>
           모든 준비가 끝났다면, 이제 마지막 단계에요!
@@ -57,6 +57,10 @@ const FAQSection = () => {
     </Section>
   );
 };
+
+const Second = styled.span`
+  color: #789fcf;
+`;
 
 const CheckboxList = styled.div`
   margin-top: 24px;

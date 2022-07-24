@@ -9,7 +9,7 @@ import { AiOutlineCalendar, AiOutlineTrophy } from "react-icons/ai";
 const ApplySection = () => {
   return (
     <Section>
-      <Section.Title>누구든 주인공이 될 수 있어요</Section.Title>
+      <Section.Title>누구든 <Second>주인공</Second>이 될 수 있어요</Section.Title>
       <Section.SubTitle>
         KAUPC의 목표는 단순히 1등을 가려내는 것이 아니라, 학우들의 프로그래밍 역량을 점검하고 기르는
         시간이에요.
@@ -27,7 +27,7 @@ const ApplySection = () => {
           </ApplyInfoTitle>
           <ApplyInfoContent>
             <li>접수 마감 : 2022년 9월 14일 (수요일) 자정</li>
-            <li>대회일 : 2022년 9월 17일 (토요일) 14:00 ~ 17:00</li>
+            <li>대회 진행 : 2022년 9월 17일 (토요일) 14:00 ~ 17:00</li>
             <li>대회 장소 : 추후 발표</li>
             <li>스코어보드 발표 : 대회 종료 직후 공개</li>
           </ApplyInfoContent>
@@ -35,36 +35,41 @@ const ApplySection = () => {
         <ApplyInfo>
           <ApplyInfoTitle>
             <AiOutlineTrophy />
-            대회 경품</ApplyInfoTitle>
+            시상내역</ApplyInfoTitle>
           <ApplyInfoContent>
             <li>
-              <Strong>1등 (1팀)</Strong> : 상금 90만원 및 상장 수여
+              <Strong>총장상 (1팀)</Strong> : 상금 90만원
             </li>
             <li>
-              <Strong>2등 (2팀)</Strong> : 상금 60만원 및 상장 수여
+              <Strong>최우수상 (2팀)</Strong> : 상금 60만원
             </li>
             <li>
-              <Strong>3등 (3팀)</Strong> : 상금 30만원 및 상장 수여
+              <Strong>우수상 (3팀)</Strong> : 상금 30만원
             </li>
             <li>
-              <Strong>4등 (4팀)</Strong> : 치킨 기프티콘 및 상장 수여
+              <Strong>장려상 (4팀)</Strong> : 치킨 기프티콘
             </li>
             <li>
-              <Strong>특별상</Strong> : 베스킨라빈스 싱글 쿠폰
-            </li>
-            <li>
-              <Strong>참가자 전원</Strong> : 학생활동 마일리지 지급
+              <Strong>특별상</Strong> : 베스킨라빈스 싱글 기프티콘
             </li>
           </ApplyInfoContent>
           <ToolTip>
             <span style={{ display: "inline-block", marginRight: "12px" }}>🏆</span>상위 3팀에게는
             경인지역 연합 프로그래밍 경시대회 Shake! 본선 진출의 기회가 주어집니다.
           </ToolTip>
+          <ToolTip style={{marginTop: "16px"}}>
+            <span style={{ display: "inline-block", marginRight: "12px" }}>🎈</span>참가자 전원에게는
+            학생활동 마일리지가 지급됩니다.
+          </ToolTip>
         </ApplyInfo>
       </ApplyInfoContainer>
     </Section>
   );
 };
+
+const Second = styled.span`
+  color: #789fcf;
+`;
 
 const ApplyInfoContainer = styled.div`
   width: 100%;

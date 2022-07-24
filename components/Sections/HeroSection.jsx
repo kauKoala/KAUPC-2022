@@ -21,7 +21,7 @@ const HeroSection = () => {
     <Section>
       <HeroContainer>
         <div>
-          <HeroTitle>KAUPC 2022</HeroTitle>
+          <HeroTitle><Second>KAUPC</Second> 2022</HeroTitle>
           <HeroSubTitle>
             한국항공대학교
             <br />제<Second>2</Second>회 프로그래밍 경진대회
@@ -37,7 +37,7 @@ const HeroSection = () => {
             <SponsorTitle>주최</SponsorTitle>
             <Info>
               <Sponsor>한국항공대학교 소프트웨어학과</Sponsor>
-              <Sponsor>한국항공대학교 알고리즘 동아리 Koala</Sponsor>
+              <Sponsor>한국항공대학교 알고리즘 학회 Koala</Sponsor>
             </Info>
           </Sponsors>
           <Sponsors>
