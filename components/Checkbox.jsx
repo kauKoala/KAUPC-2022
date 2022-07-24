@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
+import { SMALL_WIDTH } from "styles/layouts.ts";
 
 const Checkbox = ({ label, isChecked, onClick }) => {
   return (
@@ -28,7 +29,20 @@ const Container = styled.div`
 
   label {
     cursor: pointer;
+    flex: 1;
     line-height: 1.5;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: ${SMALL_WIDTH}) {
+    input {
+      width: 14px;
+      height: 14px;
+    }
+
+    label {
+      font-size: 15px;
+    }
   }
 `;
 
