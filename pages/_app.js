@@ -14,11 +14,7 @@ function MyApp({ Component, pageProps }) {
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard-dynamic-subset.css"
         />
         <title>2022 한국항공대학교 프로그래밍 경진대회</title>
-        <meta
-          name="title"
-          property="og:title"
-          content="제2회 한국항공대학교 프로그래밍 경진대회"
-        />
+        <meta name="title" property="og:title" content="제2회 한국항공대학교 프로그래밍 경진대회" />
         <meta
           name="description"
           property="og:description"
@@ -29,11 +25,7 @@ function MyApp({ Component, pageProps }) {
           property="og:image"
           content="https://user-images.githubusercontent.com/26535030/180230182-b010a812-f1d6-4dc2-94d7-4276d0bdea5d.png"
         />
-        <meta
-          name="url"
-          property="og:url"
-          content="https://kaupc2022.netlify.app/"
-        />
+        <meta name="url" property="og:url" content="https://kaupc2022.netlify.app/" />
       </Head>
       <Layout>
         <Component {...pageProps} />
@@ -48,10 +40,10 @@ const Layout = styled.div`
   & {
     background: linear-gradient(192deg, #111418, #0e0d3e);
     background-size: 400% 400%;
-
     -webkit-animation: animateBackground 5s ease infinite;
     -moz-animation: animateBackground 5s ease infinite;
     animation: animateBackground 5s ease infinite;
+    z-index: -2;
   }
 
   @-webkit-keyframes animateBackground {

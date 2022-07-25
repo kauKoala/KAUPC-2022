@@ -70,7 +70,7 @@ const Second = styled.span`
 const HeroTitle = styled.h1`
   font-size: 80px;
   margin-bottom: 20px;
-  text-shadow: 5px 5px 5px #312a7c;
+  text-shadow: 4px 4px 4px #312a7c;
 
   @media screen and (max-width: ${SMALL_WIDTH}) {
     font-size: 72px;
@@ -113,7 +113,7 @@ const SponsorTitle = styled.div`
   }
 `;
 
-const Sponsor = styled.p`
+const Sponsor = styled.div`
   font-size: 20px;
   margin: 12px 0;
 
@@ -136,7 +136,7 @@ const Schedule = styled.div`
   }
 `;
 
-const Info = styled.p`
+const Info = styled.div`
   @media screen and (max-width: ${SMALL_WIDTH}) {
     font-size: 18px;
     line-height: 1.5;

@@ -28,7 +28,7 @@ const ApplySection = () => {
           <ApplyInfoContent>
             <li>접수 마감 : 2022년 9월 14일 (수요일) 자정</li>
             <li>대회 진행 : 2022년 9월 17일 (토요일) 14:00 ~ 17:00</li>
-            <li>대회 장소 : 추후 발표</li>
+            <li>대회 장소 : 과학관 4층 전산실</li>
             <li>스코어보드 발표 : 대회 종료 직후 공개</li>
           </ApplyInfoContent>
         </ApplyInfo>
@@ -57,7 +57,7 @@ const ApplySection = () => {
             <span style={{ display: "inline-block", marginRight: "12px" }}>🏆</span>상위 3팀에게는
             경인지역 연합 프로그래밍 경시대회 Shake! 본선 진출의 기회가 주어집니다.
           </ToolTip>
-          <ToolTip style={{marginTop: "16px"}}>
+          <ToolTip style={{ marginTop: "16px" }}>
             <span style={{ display: "inline-block", marginRight: "12px" }}>🎈</span>참가자 전원에게는
             학생활동 마일리지가 지급됩니다.
           </ToolTip>

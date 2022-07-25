@@ -3,7 +3,11 @@ import Section from "components/Section";
 import React from "react";
 import { SMALL_WIDTH } from "styles/layouts.ts";
 import { MdOutlineMonitor } from "react-icons/md";
-import { RiErrorWarningLine } from "react-icons/ri"
+import { RiErrorWarningLine } from "react-icons/ri";
+import Strong from "components/Strong";
+import { css } from "@emotion/react";
+
+const KAKAO_HELP_URL = "https://open.kakao.com/o/sl1uxKqe";
 
 const RuleSection = () => {
   return (
@@ -21,21 +25,34 @@ const RuleSection = () => {
           본 대회는 3인 1팀로 진행되며, 약 3시간동안 주어진 프로그래밍 문제를 해결하는 대회입니다.
         </RuleItem>
         <RuleItem>
+          대회 전 과정은 온라인으로 진행되며, 대회 관련 문의는 대회 운영{" "}
+          <a href="KAKAO_HELP_URL" target="_blank">
+            <Strong
+              css={css`
+                color: #88a2cf;
+              `}
+            >
+              카카오톡 오픈채팅방
+            </Strong>
+          </a>
+          을 통해 건의할 수 있습니다.
+        </RuleItem>
+        <RuleItem>
           사용 가능 언어는 C11, C++14, Java (OpenJDK), Kotlin (JVM), Python 3, PyPy3 로 제한되며,
           이외의 언어로는 참여가 어려울 수 있습니다.
         </RuleItem>
         <RuleSubTitle>
           <RiErrorWarningLine />
-          유의사항</RuleSubTitle>
+          유의사항
+        </RuleSubTitle>
         <RuleItem>
-          대회가 종료된 후 소스코드 표절검사가 진행됩니다. 표절이 발견된 경우 관련 팀들은 실격됩니다.
+          대회가 종료된 후 소스코드 표절검사가 진행됩니다. 표절이 발견된 경우 관련 팀들은
+          실격됩니다.
         </RuleItem>
         <RuleItem>
           팀원이 아닌 사람과 문제에 대해 어떤 형태로든 커뮤니케이션하는 것은 부정행위로 간주됩니다.
         </RuleItem>
-        <RuleItem>
-          같은 팀원이 아닌 사람에게 대회용 계정의 정보를 공유해서는 안 됩니다.
-        </RuleItem>
+        <RuleItem>같은 팀원이 아닌 사람에게 대회용 계정의 정보를 공유해서는 안 됩니다.</RuleItem>
         <RuleItem>
           위의 유의사항을 위반하는 경우 부정행위로 간주되어 실격되며, 수상했더라도 수상이 취소될 수
           있습니다.

@@ -4,6 +4,7 @@ import { SMALL_WIDTH } from "styles/layouts.ts";
 
 const Section = styled.section`
   min-height: 100vh;
+  z-index: 10;
   padding: 80px 60px 0 60px;
 
   @media screen and (max-width: ${SMALL_WIDTH}) {
