@@ -24,9 +24,9 @@ const RuleSection = () => {
         <RuleItem>
           본 대회는 3인 1팀로 진행되며, 약 3시간동안 주어진 프로그래밍 문제를 해결하는 대회입니다.
         </RuleItem>
-        <RuleItem>
+        <RuleItem style={{zIndex: 10}}>
           대회 전 과정은 온라인으로 진행되며, 대회 관련 문의는 대회 운영{" "}
-          <a href="KAKAO_HELP_URL" target="_blank">
+          <a href={KAKAO_HELP_URL} target="_blank" rel="noopener noreferrer" style={{zIndex: 10}}>
             <Strong
               css={css`
                 color: #88a2cf;
@@ -84,6 +84,12 @@ const RuleItem = styled.li`
   font-size: 20px;
   margin: 6px 0;
   line-height: 1.6;
+  
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 
   @media screen and (max-width: ${SMALL_WIDTH}) {
     font-size: 15px;
