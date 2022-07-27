@@ -80,6 +80,7 @@ const FAQSection = () => {
           <Section.SubTitle
             css={css`
               font-size: 26px;
+              text-align: center;
               @media screen and (max-width: ${SMALL_WIDTH}) {
                 & {
                   font-size: 24px;
@@ -94,6 +95,7 @@ const FAQSection = () => {
               margin-bottom: 24px;
               line-height: 1.5;
               margin-top: 32px;
+              text-align: center;
               @media screen and (max-width: ${SMALL_WIDTH}) {
                 & {
                   font-size: 16px;
