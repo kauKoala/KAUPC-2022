@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <LottieContainer ref={lottieContainer}></LottieContainer>
+      <LottieContainer ref={lottieContainer} />
       <HeroSection id={SectionId.HERO} />
       <Spacing />
       <ApplySection id={SectionId.INFO} />
@@ -45,6 +45,7 @@ const LottieContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  pointer-events: none;
 
   svg {
     position: fixed;

@@ -149,6 +149,7 @@ const LottieContainer = styled.div`
   top: 100px;
   position: absolute;
   right: 100px;
+  pointer-events: none;
 
   svg {
     height: 400px;

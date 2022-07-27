@@ -272,7 +272,6 @@ const ApplyButton = styled.button`
 `;
 
 const PreviousButton = styled(ApplyButton)`
-  background-color: red;
   width: 400px;
   padding: 16px 20px;
 `;
