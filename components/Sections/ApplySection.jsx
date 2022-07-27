@@ -55,7 +55,7 @@ const ApplySection = () => {
           </ApplyInfoContent>
           <ToolTip>
             <span style={{ display: "inline-block", marginRight: "12px" }}>🏆</span>상위 3팀에게는
-            경인지역 연합 프로그래밍 경시대회 Shake! 본선 진출의 기회가 주어집니다.
+            shake! 경인지역 6개대학 연합 프로그래밍 경시대회 본선 진출의 기회가 주어집니다.
           </ToolTip>
           <ToolTip style={{ marginTop: "16px" }}>
             <span style={{ display: "inline-block", marginRight: "12px" }}>🎈</span>참가자 전원에게는
