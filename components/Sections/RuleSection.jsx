@@ -26,10 +26,11 @@ const RuleSection = () => {
         </RuleItem>
         <RuleItem>
           대회 전 과정은 온라인으로 진행되며, 대회 관련 문의는 대회 운영{" "}
-          <a href="KAKAO_HELP_URL" target="_blank">
+          <a href={KAKAO_HELP_URL} target="_blank" rel="noreferrer">
             <Strong
               css={css`
                 color: #88a2cf;
+                cursor: pointer;
               `}
             >
               카카오톡 오픈채팅방
