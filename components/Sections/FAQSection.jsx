@@ -104,7 +104,7 @@ const FAQSection = () => {
               }
             `}
           >
-            올해가 첫 번째 대회라면, 2021 KAUPC의 문제도 확인해 보세요.
+            프로그래밍 대회가 처음이라면, 2021 KAUPC 기출문제로 미리 경험해보세요.
           </Info>
           <PrevProblemButton
             css={css`

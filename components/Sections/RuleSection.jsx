@@ -24,10 +24,9 @@ const RuleSection = () => {
         <RuleItem>
           본 대회는 3인 1팀로 진행되며, 약 3시간동안 주어진 프로그래밍 문제를 해결하는 대회입니다.
         </RuleItem>
-        <RuleItem style={{zIndex: 10}}>
-          대회 전 과정은 온라인으로 진행되며, 대회 관련 문의는 대회 운영{" "}
-          <a href={KAKAO_HELP_URL} target="_blank" rel="noopener noreferrer" style={{zIndex: 10}}>
-
+        <RuleItem style={{ zIndex: 10 }}>
+          대회 과정은 오프라인으로 진행되며, 진행 관련 문의는 대회 운영{" "}
+          <a href={KAKAO_HELP_URL} target="_blank" rel="noopener noreferrer" style={{ zIndex: 10 }}>
             <Strong
               css={css`
                 color: #88a2cf;
@@ -48,8 +47,7 @@ const RuleSection = () => {
           유의사항
         </RuleSubTitle>
         <RuleItem>
-          대회가 종료된 후 소스코드 표절검사가 진행됩니다. 표절이 발견된 경우 관련 팀들은
-          실격됩니다.
+          대회가 종료된 후 소스코드 표절검사가 진행되며, 표절이 발견된 경우 관련 팀들은 실격됩니다.
         </RuleItem>
         <RuleItem>
           팀원이 아닌 사람과 문제에 대해 어떤 형태로든 커뮤니케이션하는 것은 부정행위로 간주됩니다.
@@ -86,8 +84,8 @@ const RuleItem = styled.li`
   font-size: 20px;
   margin: 6px 0;
   line-height: 1.6;
-  
-  -ms-user-select: none; 
+
+  -ms-user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
