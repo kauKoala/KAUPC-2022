@@ -41,13 +41,13 @@ const ApplySection = () => {
               <Strong>총장상 (1팀)</Strong> : 상금 90만원
             </li>
             <li>
-              <Strong>최우수상 (2팀)</Strong> : 상금 60만원
+              <Strong>대상 (2팀)</Strong> : 상금 60만원
             </li>
             <li>
-              <Strong>우수상 (3팀)</Strong> : 상금 30만원
+              <Strong>최우수상 (3팀)</Strong> : 상금 30만원
             </li>
             <li>
-              <Strong>장려상 (4팀)</Strong> : 치킨 기프티콘
+              <Strong>우수상 (4팀)</Strong> : 치킨 기프티콘
             </li>
             <li>
               <Strong>특별상</Strong> : 베스킨라빈스 싱글 기프티콘
