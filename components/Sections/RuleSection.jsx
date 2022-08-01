@@ -27,9 +27,6 @@ const RuleSection = () => {
         <RuleItem>
           인터넷 검색을 이용하거나 미리 준비한 코드를 사용해도 됩니다. 다만 구글링으로 가져온 코드는 반드시 주석으로 출처를 표기해야 합니다.
         </RuleItem>
-        <RuleItem>
-          3명이 반드시 한 대의 컴퓨터를 사용할 필요는 없습니다.
-        </RuleItem>
         <RuleItem style={{ zIndex: 10 }}>
           대회 과정은 오프라인으로 진행되며, 진행 관련 문의는 대회 운영{" "}
           <a href={KAKAO_HELP_URL} target="_blank" rel="noopener noreferrer" style={{ zIndex: 10 }}>
