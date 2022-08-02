@@ -40,9 +40,9 @@ const HeroSection = () => {
               <Sponsor>한국항공대학교 알고리즘 학회 Koala</Sponsor>
             </Info>
           </Sponsors>
-          <Sponsors>
+          <Sponsors style={{zIndex: 10}}>
             <SponsorTitle>후원</SponsorTitle>
-            <Info>
+            <Info style={{zIndex: 10}}>
               <a href="https://startlink.io/" target="_blank" rel="noreferrer">
                 <SponsorImage src="startlink-logo-white.png" alt="후원처 1 - startlink" />
               </a>
@@ -108,6 +108,13 @@ const Sponsors = styled.div`
 const SponsorTitle = styled.div`
   font-size: 28px;
   margin-bottom: 18px;
+
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
   @media screen and (max-width: ${SMALL_WIDTH}) {
     font-size: 22px;
   }
@@ -149,7 +156,6 @@ const LottieContainer = styled.div`
   top: 100px;
   position: absolute;
   right: 100px;
-  pointer-events: none;
 
   svg {
     height: 400px;

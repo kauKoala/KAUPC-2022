@@ -45,7 +45,6 @@ const LottieContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  pointer-events: none;
 
   svg {
     position: fixed;
