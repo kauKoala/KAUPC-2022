@@ -2,6 +2,8 @@
 
 ---
 
+![image](https://user-images.githubusercontent.com/79046106/187481184-78875f46-14d4-4a27-a0d8-3ae21f7b4aef.png)
+
 항공대 알고리즘 학회, Koala에서 제작한 2022 KAUPC 홍보 페이지입니다.  
 `Next.js` 기반으로 제작되었습니다.
 
