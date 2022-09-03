@@ -27,7 +27,7 @@ const HeroSection = () => {
             <br />제<Second>2</Second>회 프로그래밍 경진대회
           </HeroSubTitle>
           <Schedule>
-            <Info>접수 : ~ 09.14(수)</Info>
+            <Info>접수 : ~ 09.13(화)</Info>
             <Info>대회 : 09.17(토) 14:00 ~ 17:00</Info>
           </Schedule>
         </div>
